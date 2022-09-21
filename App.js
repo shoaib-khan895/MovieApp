@@ -7,6 +7,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import MovieDetails from './src/Components/MoviesDetails';
 import Screen1 from './src/Components/BottomNavHome';
 import Screen2 from './src/Components/Screen2';
+import StroageScreen from './src/Components/StorageScreen';
+import BottomNavHome from './src/Components/BottomNavHome';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,8 +22,10 @@ function App() {
           component={MovieDetails}
           options={{ headerShown: false }}
         />
+        <Stack.Screen name="BottomNavHome" component={BottomNavHome} />
         <Stack.Screen name="Screen1" component={Screen1} />
         <Stack.Screen name="Screen2" component={Screen2} />
+        <Stack.Screen name="StroageScreen" component={StroageScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>

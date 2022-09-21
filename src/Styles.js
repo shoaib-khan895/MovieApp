@@ -3,8 +3,41 @@ import Constants from './Constants';
 
 const deviceHeight = Dimensions.get('window').height;
 const deviceWidth = Dimensions.get('window').width;
+const {width} = Dimensions.get('screen');
 
 const Styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  inputBox: {
+    borderWidth: 2,
+    borderColor: 'black',
+    marginVertical: 10,
+    marginHorizontal: 8,
+  },
+  addButton: {
+    width: width - 20,
+    backgroundColor: 'blue',
+    marginHorizontal: 10,
+    alignItems: 'center',
+    padding: 10,
+  },
+   button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 4,
+    elevation: 3,
+    backgroundColor: 'black',
+  },
+  text: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: 'white',
+  },
   sectionBg: {
     backgroundColor: Constants.baseColor,
     height: deviceHeight,

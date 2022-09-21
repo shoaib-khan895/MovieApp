@@ -12,7 +12,7 @@ const DiscoverMovies = props => {
   useEffect(() => {
     const getMovies = async () => {
       const response = await GET('/discover/movie');
-      console.log(response);
+      // console.log(response);
       setMovies(response.results);
 
       const images = response.results.map(
