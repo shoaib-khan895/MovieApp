@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Pressable, View, Text } from 'react-native';
-import DiscoverMovies from './Components/DiscoverMovies';
+import DiscoverMovies from '../DiscoverMovies';
 import Styles from './Styles';
 import TrendingPeople from './Components/TrendingPeople';
 import TrendingMovies from './Components/TrendingMovies';

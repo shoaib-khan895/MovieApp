@@ -8,7 +8,7 @@ import {
   } from 'react-native';
   import React, {useState} from 'react';
   import AsyncStorage from '@react-native-async-storage/async-storage';
-import Styles from '../Styles';
+import Styles from '../../Styles';
 
 
 const StroageScreen = () => {

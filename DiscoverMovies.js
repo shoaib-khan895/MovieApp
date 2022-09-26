@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text} from 'react-native';
-import {GET} from '../Services/API';
-import {SliderBox} from 'react-native-image-slider-box';
-import {IMAGE_POSTER_URL} from '../config';
-import Constants from '../Constants';
+import {GET} from './src/Services/API';
+import { SliderBox } from "react-native-image-slider-box";
+import {IMAGE_POSTER_URL} from './src/config';
+import Constants from './src/Constants';
 
 const DiscoverMovies = props => {
   const [movies, setMovies] = useState([]);
